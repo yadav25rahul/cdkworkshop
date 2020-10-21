@@ -32,3 +32,5 @@ class HitCounter(core.Construct):
                 'HITS_TABLE_NAME': table.table_name,
             }
         )
+
+        table.grant_read_write_data(self.handler)
